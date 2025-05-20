@@ -78,7 +78,7 @@ st.markdown("""
         <img src="https://raw.githubusercontent.com/JLHM1998/ThermiCAL/master/assets/Escudo.png" style="height: 80px;">
         <div style="text-align: center;">
             <h1 style="color: white; margin: 0;">🔥 ThermiCAL</h1>
-            <p style="margin: 0; font-size: 14px; color: #e0e0e0;">Calibración térmica profesional de imágenes UAV</p>
+            <p style="margin: 0; font-size: 14px; color: #e0e0e0;">Calibración de imágenes térmicas obtenidas por una cámara H20T acoplada a un dron</p>
         </div>
         <img src="https://raw.githubusercontent.com/JLHM1998/ThermiCAL/master/assets/logo_TyC.png" style="height: 80px;">
     </div>
