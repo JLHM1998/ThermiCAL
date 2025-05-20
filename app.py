@@ -10,60 +10,70 @@ st.set_page_config(page_title="ThermiCAL", layout="wide")
 st.markdown("""
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
         body {
-            background: linear-gradient(to bottom right, #1e3c72, #2a5298);
-            color: white;
             font-family: 'PT Serif', serif;
         }
-        .main-header {
-            background-color: #ffa500;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            color: white;
-            font-size: 32px;
+
+        /* Estilo para Modo Claro */
+        @media (prefers-color-scheme: light) {
+            body {
+                background: linear-gradient(to bottom right, #ffffff, #e6e6e6);
+                color: #000000;
+            }
+            .main-header {
+                background-color: #ffa500;
+                color: white;
+            }
+            h2, h3, .stMarkdown {
+                color: #000000;
+            }
+        }
+
+        /* Estilo para Modo Oscuro */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+                color: white;
+            }
+            .main-header {
+                background-color: #ffa500;
+                color: white;
+            }
+            h2, h3, .stMarkdown {
+                color: #f0f0f0;
+            }
+        }
+
+        .stButton > button, .stDownloadButton > button {
+            font-family: 'PT Serif', serif;
             font-weight: bold;
+            border-radius: 10px;
+            padding: 10px 20px;
         }
-        .logo-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 10px 30px;
-        }
-        .logo-container img {
-            height: 120px;
-        }
+
         .stButton > button {
             background-color: #ffa500;
             color: white;
-            font-weight: bold;
-            border-radius: 10px;
-            font-family: 'PT Serif', serif;
-            padding: 10px 20px;
         }
+
         .stDownloadButton > button {
             background-color: #28a745;
             color: white;
-            font-weight: bold;
-            border-radius: 10px;
-            font-family: 'PT Serif', serif;
-            padding: 10px 20px;
         }
+
         .stNumberInput input {
             background-color: #f0f0f0;
             color: #333;
             font-family: 'PT Serif', serif;
         }
-        h2, h3, .stMarkdown {
-            color: #f0f0f0;
-            font-family: 'PT Serif', serif;
-        }
+
         .stFileUploader {
             background-color: rgba(255, 255, 255, 0.1);
             padding: 10px;
             border-radius: 10px;
         }
+
         footer {
             text-align: center;
             margin-top: 50px;
@@ -72,6 +82,7 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+
 # Encabezado con logos y título alineados horizontalmente
 st.markdown("""
     <div style="display: flex; align-items: center; justify-content: space-between; background-color: #005792; padding: 10px 20px; border-radius: 10px;">
