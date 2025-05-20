@@ -74,7 +74,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 # Encabezado con logos y título alineados horizontalmente
 st.markdown("""
-    <div style="display: flex; align-items: center; justify-content: space-between; background-color: #ffa500; padding: 10px 20px; border-radius: 10px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; background-color: #005792; padding: 10px 20px; border-radius: 10px;">
         <img src="https://raw.githubusercontent.com/JLHM1998/ThermiCAL/master/assets/Escudo.png" style="height: 80px;">
         <div style="text-align: center;">
             <h1 style="color: white; margin: 0;">🔥 ThermiCAL</h1>
