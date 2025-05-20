@@ -77,7 +77,7 @@ st.markdown("""
     <div style="display: flex; align-items: center; justify-content: space-between; background-color: #ffa500; padding: 10px 20px; border-radius: 10px;">
         <img src="https://raw.githubusercontent.com/JLHM1998/ThermiCAL/master/assets/Escudo.png" alt="Logo Izquierdo" style="height: 80px;">
         <h1 style="color: white; text-align: center; margin: 0; font-size: 24px; font-family: 'PT Serif', serif;">
-            🔥 Calibración de Imágenes Térmicas
+            🔥 ThermiCAL
         </h1>
         <img src="https://raw.githubusercontent.com/JLHM1998/ThermiCAL/master/assets/logo_TyC.png" alt="Logo Derecho" style="height: 80px;">
     </div>
