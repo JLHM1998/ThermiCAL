@@ -101,7 +101,7 @@ Esta aplicación permite cargar un ortomosaico térmico, aplicar una **ecuación
 La calibración indirecta de las imágenes térmicas obtenidas por la cámara H20T se realizó comparándolas con los datos medidos con un radiómetro en nueve coberturas. Para reescalar los valores de temperatura en las imágenes térmicas, se utilizó un radiómetro Apogee MI-210 (MI-210; Apogee Instruments, Inc., Logan, UT, USA). Este radiómetro se utilizó en nueve coberturas conocidas, incluyendo aluminio, hojas secas, hojas verdes, poliestireno expandido, tela amarilla, tela negra, tela roja, tela verde y suelo desnudo.
 """)
 # --- Menús desplegables jerárquicos ---
-st.markdown("### 🗺️ Seleccionar información del vuelo")
+st.markdown("### 🗺️ Seleccionar información del monitoreo")
 # Selección de región
 region = st.selectbox("🌎 Seleccionar Región", ["Lambayeque", "Lima"])
 # Inicializar variables
@@ -123,9 +123,9 @@ elif region == "Lima":
 if zona:
     st.write(f"Zona seleccionada: {zona}")
 # --- Selección de hora ---
-st.markdown("### 🕒 Seleccionar hora del vuelo")
+st.markdown("### 🕒 Seleccionar hora del monitoreo")
 horas_disponibles = [datetime.time(hour, 0) for hour in range(9, 16)]
-hora = st.selectbox("🕒 Hora del Vuelo (9:00 AM a 3:00 PM)", horas_disponibles)
+hora = st.selectbox("🕒 Hora del monitoreo (9:00 AM a 3:00 PM)", horas_disponibles)
 st.write(f"Hora seleccionada: {hora}")
 # --- Diccionario de ecuaciones ---
 ecuaciones = {
