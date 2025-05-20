@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from rasterio.io import MemoryFile
 import datetime
 # Configuración de la página
-st.set_page_config(page_title="ThermiCAL", layout="center")
+st.set_page_config(page_title="ThermiCAL", layout="wide")
 # Estilos personalizados
 st.markdown("""
     <style>
