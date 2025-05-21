@@ -89,7 +89,7 @@ st.markdown("""
         <img src="https://raw.githubusercontent.com/JLHM1998/ThermiCAL/master/assets/Escudo.png" style="height: 80px;">
         <div style="text-align: center;">
             <h1 style="color: white; margin: 0;">🔥 ThermiCAL</h1>
-            <p style="margin: 0; font-size: 14px; color: #e0e0e0;">Calibración de imágenes térmicas obtenidas por una cámara H20T acoplada a un dron</p>
+            <p style="margin: 0; font-size: 14px; color: #e0e0e0;">Aplicativo Web para el procesamiento y Corrección Radiométrica</p>
         </div>
         <img src="https://raw.githubusercontent.com/JLHM1998/ThermiCAL/master/assets/logo_TyC.png" style="height: 80px;">
     </div>
@@ -212,6 +212,26 @@ if uploaded_file is not None:
                        file_name=f"{zona}_{hora}_calibrada.tif", mime="image/tiff")
 else:
     st.info("Por favor, sube una imagen térmica para comenzar.")
+
+# --- Sección de Manual de Usuario ---
+st.markdown("### 📘 Manual de Usuario")
+st.markdown("""
+Para conocer más sobre el funcionamiento de esta aplicación, puedes visualizar o descargar el manual completo que contiene instrucciones detalladas, flujogramas, requisitos y recomendaciones de uso.
+
+- **Visualizar en línea**:  
+  [Haz clic aquí para abrir el manual en una nueva pestaña](https://thermical.streamlit.app/Manual_Usuario_ThermiCAL.pdf)
+
+- **Descargar PDF**:
+""")
+
+with open("Manual_Usuario_ThermiCAL.pdf", "rb") as manual_file:
+    st.download_button(
+        label="📥 Descargar Manual de Usuario (PDF)",
+        data=manual_file,
+        file_name="Manual_Usuario_ThermiCAL.pdf",
+        mime="application/pdf"
+    )
+
 # Pie de página
 st.markdown("""
     <footer>
