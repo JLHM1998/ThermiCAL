@@ -219,7 +219,7 @@ st.markdown("""
 Para conocer más sobre el funcionamiento de esta aplicación, puedes visualizar o descargar el manual completo que contiene instrucciones detalladas, flujogramas, requisitos y recomendaciones de uso.
 
 - **Visualizar en línea**:  
-  [Haz clic aquí para abrir el manual en una nueva pestaña](https://thermical.streamlit.app/Manual_Usuario_ThermiCAL.pdf)
+  [Haz clic aquí para abrir el manual en una nueva pestaña](https://github.com/JLHM1998/ThermiCAL/blob/main/Manual_Usuario_ThermiCAL.pdf)
 
 - **Descargar PDF**:
 """)
